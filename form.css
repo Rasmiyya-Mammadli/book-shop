@@ -1,0 +1,77 @@
+
+
+.wrapper {
+width: 1200px;
+height: 1000px;
+margin: auto;
+background-image: url(https://st.depositphotos.com/1741875/1237/i/600/depositphotos_12376816-stock-photo-stack-of-old-books.jpg);
+background-repeat: no-repeat;
+background-position: right;
+border-radius: 20px;
+box-sizing: border-box;
+border-color: black;
+}
+.form{
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+.form h1 {
+ color: rgb(65, 6, 39);
+ font-family: 'Times New Roman', Times, serif;
+ font-style: italic;
+ 
+ font-size:  46px;
+ height: 80px;
+ text-align: center;
+}
+
+label {
+ color:  rgb(65, 6, 39);
+ font-family: 'Times New Roman', Times, serif;
+ font-style: normal;
+ font-size:  18px;
+ text-align: left;
+}
+.text{
+    height: 25px;
+    width: 230px;
+
+}
+.number {
+    height: 25px;
+    width: 230px;
+}
+.date{
+    height: 25px;
+    width: 230px;
+}
+h2 {
+    color: rgb(65, 6, 39);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    
+}
+
+button {
+    background-color: rgb(65, 6, 39);
+    color: white; 
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    border-radius: 25px;
+    border-style: none;
+    text-align: center;
+
+}
+input:valid {
+border: 2px solid green;
+}
+input:invalid {
+    border: 1px solid red;
+}
+   
+
+    
