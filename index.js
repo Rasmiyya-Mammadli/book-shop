@@ -416,6 +416,7 @@ function updateCartTotal() {
 
 var counter=0
 var isClicked=false
+var sectionn=section.style.display='none';
 carta.addEventListener('click',()=>{
   isClicked=!isClicked
   if (isClicked==true) {
