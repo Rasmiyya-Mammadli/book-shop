@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK-SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef4acaea7b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <nav class="navigation" id="navbar">
+
+        <div class="central-nav">
+
+        </div>
+        </div>
+    </nav>
+    <header class="header">
+        <h1 class="header__heading">Confirm your order<p class="header__text">Shipping details</p>
+        </h1>
+    </header>
+    <main class="main-container">
+        <form target="_blank" class="main-form">
+            <div class="ship-component private-info">
+                <h2>Personal information</h2>
+
+                <div class="pi-1"><label for="name">First </label>
+                    <input type="text" id="name" placeholder="Name" minlength="4" required>
+                    <span id="name-error"></span>
+                </div>
+
+                <div class="pi-2"><label for="surname">Last</label>
+                    <input type="text" id="surname" placeholder="Surname" minlength="5" required>
+                    <span id="surname-error"></span>
+                </div>
+
+                <div class="pi-3"><label for="date">Delivery date</label>
+                    <input type="date"  id="date" required>
+                    <span id="date-error"></span>
+                </div>
+            </div>
+
+            <div class="ship-component address">
+                <h2>Address</h2>
+                <div class="a-1"><label for="street">Street</label>
+                    <input type="text" id="street" minlength="5" required><span id="name-street-error"></span>
+                </div>
+                <div class="a-2"><label for="hnumber">House number</label>
+                    <input type="number" id="hnumber" required><span id="house-error"></span>
+                </div>
+
+                <div class="a-3"> <label for="flat-number">Flat number</label>
+                    <input type="text" id="flat-number" required>
+                    <span id="flat-error"></span>
+                </div>
+            </div>
+
+            <div class="ship-component payment">
+                <h2>Payment</h2>
+                <input type="radio" name="payment" id="payment" required>
+                <label for="payment">Card</label>
+                <input type="radio" name="payment" id="payment2" required>
+                <label for="payment2">Cash</label>
+                <span id="payment-error"></span>
+            </div>
+
+            <div class="ship-component checkboxes">
+                <h2>Choose 2 gifts (optional):</h2>
+                <span id="gift-error"></span>
+                <label for="pack"><input type="checkbox" id="pack" name="gift" class="choices"> pack as a gift</label>
+                <label for="postcard"><input type="checkbox" id="postcard" name="gift" class="choices">
+                    add postcard</label>
+                <label for="discount"><input type="checkbox" id="discount" name="gift" class="choices">
+                    provide 2% discount to next order</label>
+                <label for="pen"><input type="checkbox" id="pen" name="gift" class="choices">
+                    branded pen or pencil</label>
+            </div>
+            <div id="submit-error"></div>
+            <div class="form-button"><input type="submit" value="Purchase" class="btn-disabled" id="submit-button">
+            </div>
+
+        </form>
+
+        <div class="order-confirmation">
+            <h2>Your order will be delivered to below address:</h2>
+            <p id="address-details"></p>
+            <p class="last-p">thank you!</p>
+
+            </h2>
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
