@@ -132,7 +132,7 @@ main{
     background:var(--dark-color);
 }
 .home{
-    background: url(../banner-bg.jpg) no-repeat;
+    background: url(/book-shop/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -453,63 +453,4 @@ section {
 
 .cart-row:last-child .cart-column {
     border: none;
-}
-.draggable {
-    box-sizing: border-box;
-    border: 1px solid var(--green);
-    box-shadow: 1px 1px 3px rgb(154, 171, 87);
-    background: #f5f4f0;
-}
-footer {
-    background: var(--green);
-    top: 1000px;
-    display: flex;
-}
-
-/* media queries  */
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    main{
-        padding:3rem 2rem;
-    }
-
-}
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-}
-
-@media (max-width:768px){
-
-    html{
-        scroll-padding-top: 0;
-    }
-
-    body{
-        padding-bottom: 6rem;
-    }
-
-    .header2{
-        display:none;
-    }
-
-    .bottom-navbar{
-        display: block;
-    }
-
-    .home .row .content{
-        text-align: center;
-    }
-
-    .home .row .content h3{
-        font-size: 3.5rem;
-    }
-
-
 }
