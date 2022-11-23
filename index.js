@@ -66,12 +66,16 @@ const books = [
     bookdiv.className='books';
     maindiv.appendChild(contentdiv);
     maindiv.appendChild(bookdiv);
+    const footer=document.createElement('footer')
+    document.body.append(footer);
+    footer.style.background='green'
+    console.log(footer)
 
     const parentElement = document.querySelector('.books');
  
     books.forEach(book => {
     const bookCard = document.createElement('div');
-    bookCard.className='draggable';
+    bookCard.classList.add('draggable');
     bookCard.setAttribute('draggable','true');
     bookCard.setAttribute('id', 'draggable')
     bookCard.setAttribute('ondragstart','dragstart_handler(event)')
