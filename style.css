@@ -531,6 +531,23 @@ section {
     }
 
 }
+.draggable {
+    box-sizing: border-box;
+    border: 1px solid var(--green);
+    box-shadow: 2px 2px 3px var(--green);
+    background: #edf1f3;;
+    background-image: linear-gradient(45deg, #edf1f3), 45deg(#9bbecf);
+    animation-name: book;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+}
+@keyframes book {
+    from{background-color: #d4dee3;}
+    to { background-image: radial-gradient(circle, rgba(139, 90, 179, 0.54) 0%, rgba(95, 187, 187, 0.83) 87%);}
+}
 
 @media (max-width:450px){
 
